@@ -20,7 +20,7 @@ public class BangsManager {
     ///   - textColor: The color of the text. Default is `.white`.
     ///   - backgroundColor: The background color for the bang. Default is `.black`.
     ///   - font: The font for the text. If nil, a default font will be used.
-    init(image: UIImage? = UIImage(),
+    public init(image: UIImage? = UIImage(),
          text: String? = nil,
          textColor: UIColor = .white,
          backgroundColor: UIColor = .black,
@@ -31,7 +31,7 @@ public class BangsManager {
     }
     
     /// Adds a 'Bang' view to the current key window if conditions allow.
-    func addBang() {
+    public func addBang() {
         guard let window = UIWindow.currentKeyWindow(), shouldShowBang(window: window) else { return }
         
         let bangView = BangViewFactory.createView(with: viewModel)
