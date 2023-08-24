@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 /// Manages the display of "Bang" views on the application window.
-class BangsManager {
+public class BangsManager {
     
     private var viewModel: BangViewModel
     
